@@ -17,6 +17,8 @@ fi
 cd student-submission
 
 java -cp $CPATH  org.junit.runner.JUnitCore TestListExamples > failures.txt
+javac -cp $CPATH ListExamples.java 2>> errors.txt 
+
 
 if [[ $(grep -c "error: method filter" errors.txt) -ne 0 ]]
 then
