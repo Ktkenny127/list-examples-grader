@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.junit.*;
 
-class containsLetterA{
+class containsLetterA implements StringChecker{
   public boolean checkString(String s) {
     return s.contains("a") || s.contains("a");
   }
